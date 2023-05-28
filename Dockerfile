@@ -6,7 +6,7 @@ WORKDIR /usr/share/nginx/html
 
 # 로컬의 HTML 파일을 컨테이너로 복사
 COPY index.html .
-COPY img.cgv.co.kr .
+COPY img.cgv.co.kr ./img.cgv.co.kr
 
 # 컨테이너가 80 포트를 사용하도록 설정
 EXPOSE 80
