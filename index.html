@@ -59,8 +59,7 @@
     <script type="text/javascript" src="./img.cgv.co.kr/R2014/js/silverlight_link.js"></script>
     <script src="./img.cgv.co.kr/R2014/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
-    <link rel="stylesheet" media="all" type="text/css"
-        href="./img.cgv.co.kr/R2014/css/phototicket/phototicket.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="./img.cgv.co.kr/R2014/css/phototicket/phototicket.css" />
     <link rel="stylesheet" media="all" type="text/css" href="./img.cgv.co.kr/R2014/css/slick.css" />
     <link rel="stylesheet" media="all" type="text/css" href="./img.cgv.co.kr/R2014/css/slick-theme-custom.css" />
 
@@ -190,12 +189,9 @@
     </script>
     <link rel="stylesheet" href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/common.css" />
     <link rel="stylesheet" href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation.css" />
-    <link rel="stylesheet"
-        href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation_tnb.css" />
-    <link rel="stylesheet"
-        href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation_popup.css" />
-    <link rel="stylesheet"
-        href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation_step3.css" />
+    <link rel="stylesheet" href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation_tnb.css" />
+    <link rel="stylesheet" href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation_popup.css" />
+    <link rel="stylesheet" href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation_step3.css" />
     <link rel="stylesheet"
         href="./img.cgv.co.kr/CGV_RIA/Ticket/Common/css/2023/0511/FORM_TYPE/reservation_step3_special.css" />
     <link rel="stylesheet"
@@ -603,12 +599,13 @@
                                                                 class="cgvIcon etc age15">15</i><span
                                                                 class="text">분노의질주-라이드오어다이</span><span
                                                                 class="sreader"></span></a></li>
-                                                    <li class="" data-index="3" movie_cd_group="20032164"
-                                                        movie_idx="86883"><a href="#" onclick="return false;"
-                                                            title="가디언즈오브갤럭시-Volume3" alt="가디언즈오브갤럭시-Volume3"><i
+                                                    <li class="selected" data-index="3" movie_cd_group="20032164"
+                                                        movie_idx="86883" selectedmovietype="ALL"><a href="#"
+                                                            onclick="return false;" title="가디언즈오브갤럭시-Volume3"
+                                                            alt="가디언즈오브갤럭시-Volume3"><i
                                                                 class="cgvIcon etc age12">12</i><span
                                                                 class="text">가디언즈오브갤럭시-Volume3</span><span
-                                                                class="sreader"></span></a></li>
+                                                                class="sreader">선택됨</span></a></li>
                                                 </ul>
                                                 <div class="pane pane-y"
                                                     style="display: block; opacity: 1; visibility: visible;">
@@ -687,12 +684,12 @@
                                                                         style="display: list-item;"><a href="#"
                                                                             onclick="theaterListClickListener(event);return false;">강남<span
                                                                                 class="sreader"></span></a></li>
-                                                                    <li class="" data-index="2" areaindex="1"
+                                                                    <li class="selected" data-index="2" areaindex="1"
                                                                         theater_cd="0001" rating_cd="undefined"
                                                                         style="display: list-item;"><a href="#"
                                                                             onclick="theaterListClickListener(event);return false;"
                                                                             title="강변역 테크노마트">강변<span
-                                                                                class="sreader"></span></a></li>
+                                                                                class="sreader">선택됨</span></a></li>
                                                                     <li class="" data-index="4" areaindex="1"
                                                                         theater_cd="0229" rating_cd="undefined"
                                                                         style="display: list-item;"><a href="#"
@@ -2022,10 +2019,10 @@
                                                             onclick="return false;"><span class="dayweek">일</span><span
                                                                 class="day">28</span><span class="sreader"></span></a>
                                                     </li>
-                                                    <li data-index="3" date="20230529" class="day"><a href="#"
+                                                    <li data-index="0" date="20230529" class="day selected"><a href="#"
                                                             onclick="return false;"><span class="dayweek">월</span><span
-                                                                class="day">29</span><span class="sreader"></span></a>
-                                                    </li>
+                                                                class="day">29</span><span
+                                                                class="sreader">선택됨</span></a></li>
                                                     <li data-index="4" date="20230530" class="day"><a href="#"
                                                             onclick="return false;"><span class="dayweek">화</span><span
                                                                 class="day">30</span><span class="sreader"></span></a>
@@ -2128,7 +2125,109 @@
                                         <div class="time-option">
                                             <span class="morning">모닝</span><span class="night">심야</span>
                                         </div>
-                                        <div class="placeholder">영화, 극장, 날짜를 선택해주세요.</div>
+                                        <div class="placeholder hidden">영화, 극장, 날짜를 선택해주세요.</div>
+                                        <div class="time-list nano has-scrollbar">
+                                            <div class="content scroll-y" tabindex="-1" style="right: -17px;">
+                                                <div class="theater" screen_cd="011" movie_cd="20032164"><span
+                                                        class="title"><span class="name">2D</span><span
+                                                            class="floor">씨네앤포레 (Laser)</span><span
+                                                            class="seatcount">(총48석)</span></span>
+                                                    <ul>
+                                                        <li data-index="0" data-remain_seat="48" play_start_tm="1705"
+                                                            screen_cd="011" movie_cd="20032164" play_num="3"
+                                                            class="selected"><a class="button" href="#"
+                                                                onclick="screenTimeClickListener(event);return false;"
+                                                                title=""><span
+                                                                    class="time"><span>17:05</span></span><span
+                                                                    class="count">33석</span>
+                                                                <div class="sreader">종료시간 19:45</div><span
+                                                                    class="sreader mod"></span>
+                                                            </a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="theater" screen_cd="006" movie_cd="20032164"><span
+                                                        class="title"><span class="name">2D</span><span class="floor">6관
+                                                            (Laser)</span><span class="seatcount">(총151석)</span></span>
+                                                    <ul>
+                                                        <li data-index="1" data-remain_seat="151" play_start_tm="1350"
+                                                            screen_cd="006" movie_cd="20032164" play_num="2"><a
+                                                                class="button" href="#"
+                                                                onclick="screenTimeClickListener(event);return false;"
+                                                                title=""><span
+                                                                    class="time"><span>13:50</span></span><span
+                                                                    class="count">111석</span>
+                                                                <div class="sreader">종료시간 16:30</div><span
+                                                                    class="sreader mod"></span>
+                                                            </a></li>
+                                                        <li data-index="2" data-remain_seat="151" play_start_tm="1950"
+                                                            screen_cd="006" movie_cd="20032164" play_num="4"><a
+                                                                class="button" href="#"
+                                                                onclick="screenTimeClickListener(event);return false;"
+                                                                title=""><span
+                                                                    class="time"><span>19:50</span></span><span
+                                                                    class="count">136석</span>
+                                                                <div class="sreader">종료시간 22:30</div><span
+                                                                    class="sreader mod"></span>
+                                                            </a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="theater" screen_cd="010" movie_cd="20032164"
+                                                    style="border: none;"><span class="title"><span
+                                                            class="name">2D</span><span class="floor">10관
+                                                            (Laser)</span><span class="seatcount">(총184석)</span></span>
+                                                    <ul>
+                                                        <li data-index="3" data-remain_seat="184" play_start_tm="1250"
+                                                            screen_cd="010" movie_cd="20032164" play_num="2"
+                                                            class="disabled"><a class="button" href="#"
+                                                                onclick="screenTimeClickListener(event);return false;"
+                                                                title=""><span
+                                                                    class="time"><span>12:50</span></span><span
+                                                                    class="count">예매종료</span>
+                                                                <div class="sreader">종료시간 15:30</div><span
+                                                                    class="sreader mod"> 선택불가</span>
+                                                            </a></li>
+                                                        <li data-index="4" data-remain_seat="184" play_start_tm="1550"
+                                                            screen_cd="010" movie_cd="20032164" play_num="3"><a
+                                                                class="button" href="#"
+                                                                onclick="screenTimeClickListener(event);return false;"
+                                                                title=""><span
+                                                                    class="time"><span>15:50</span></span><span
+                                                                    class="count">149석</span>
+                                                                <div class="sreader">종료시간 18:30</div><span
+                                                                    class="sreader mod"></span>
+                                                            </a></li>
+                                                        <li data-index="5" data-remain_seat="184" play_start_tm="1850"
+                                                            screen_cd="010" movie_cd="20032164" play_num="4"><a
+                                                                class="button" href="#"
+                                                                onclick="screenTimeClickListener(event);return false;"
+                                                                title=""><span
+                                                                    class="time"><span>18:50</span></span><span
+                                                                    class="count">166석</span>
+                                                                <div class="sreader">종료시간 21:30</div><span
+                                                                    class="sreader mod"></span>
+                                                            </a></li>
+                                                        <li data-index="6" data-remain_seat="184" play_start_tm="2150"
+                                                            screen_cd="010" movie_cd="20032164" play_num="5"><a
+                                                                class="button" href="#"
+                                                                onclick="screenTimeClickListener(event);return false;"
+                                                                title=""><span
+                                                                    class="time"><span>21:50</span></span><span
+                                                                    class="count">176석</span>
+                                                                <div class="sreader">종료시간 24:30</div><span
+                                                                    class="sreader mod"></span>
+                                                            </a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="pane pane-y"
+                                                style="display: none; opacity: 1; visibility: visible;">
+                                                <div class="slider slider-y" style="height: 50px;"></div>
+                                            </div>
+                                            <div class="pane pane-x"
+                                                style="display: none; opacity: 1; visibility: visible;">
+                                                <div class="slider slider-x" style="width: 50px;"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -4059,7 +4158,8 @@
                                                 </div>
                                                 <div class="mini_region"
                                                     style="height: 88px; width: 94px; top: 25px; left: 5px;">
-                                                    <span></span></div>
+                                                    <span></span>
+                                                </div>
                                             </div>
                                             <div class="legend" style="width: 125px;">
                                                 <div class="seat-icon-desc">
@@ -4608,9 +4708,11 @@
                                                     </div>
 
                                                     <div class="block use_point"> <span class="title">사용할 포인트</span>
-                                                        <span class="value"><span class="num">0</span>P</span></div>
+                                                        <span class="value"><span class="num">0</span>P</span>
+                                                    </div>
                                                     <div class="block remain_point"> <span class="title">잔여 포인트</span>
-                                                        <span class="value"><span class="num">0</span>P</span></div>
+                                                        <span class="value"><span class="num">0</span>P</span>
+                                                    </div>
                                                     <div class="result"> <span class="title">할인금액:</span> <span
                                                             class="price">0</span> <span class="won">원</span> </div>
                                                     <div class="guide">- 적용 대상: CGV VIP, RVIP, VVIP, SVIP<br>- 사용 한도:
@@ -4624,7 +4726,8 @@
                                                         CINE de
                                                         CHEF / 프리미엄 / STARIUM / IMAX / 4DX / PRIVATE CINEMA 이용 불가<br>-
                                                         영화 기획전,
-                                                        영화제 등 특별 편성 프로그램 및 라이트톡, 시네마톡 등 톡프로그램 이용 불가<br></div>
+                                                        영화제 등 특별 편성 프로그램 및 라이트톡, 시네마톡 등 톡프로그램 이용 불가<br>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row type2" id="sp4dxRed" style="display: none;">
@@ -4895,7 +4998,8 @@
                                                                                 <option value="N0021">신한카드</option>
                                                                                 <option value="N0004">KB국민카드</option>
                                                                                 <option value="N0003">씨티카드</option>
-                                                                            </select></div>
+                                                                            </select>
+                                                                        </div>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -5737,7 +5841,8 @@
                                                                 <dt>이용안내</dt>
                                                                 <dd class="split">CJ ONE 포인트는 <em>1,000P</em> 이상부터
                                                                     <em>10P</em>
-                                                                    단위로 사용 가능합니다.</dd>
+                                                                    단위로 사용 가능합니다.
+                                                                </dd>
                                                             </dl>
                                                         </div>
                                                     </div>
@@ -8230,7 +8335,8 @@
                                                                         <strong>CGV롯데포인트 플러스카드
                                                                             할인 혜택</strong>을 받으시려면, 즉시할인 신용카드 &gt; 롯데카드
                                                                         할인을 선택하신
-                                                                        후 결제를 진행해주세요.</li>
+                                                                        후 결제를 진행해주세요.
+                                                                    </li>
                                                                     <li class="ct" style="display: none;">
                                                                         <strong>CITI포인트</strong> 보유 고객이라면 결제 시 포인트 사용 네모
                                                                         박스 체크 후
@@ -9295,8 +9401,7 @@
             <!-- loading -->
             <div class="loading" id="ticket_loading">
                 <div class="dimm"></div>
-                <p class="loadWrap"><img
-                        src="./img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/ajax-loader-w.gif"
+                <p class="loadWrap"><img src="./img.cgv.co.kr/CGV_RIA/Ticket/image/reservation/common/ajax-loader-w.gif"
                         alt="로딩 애니메이션" /></p>
             </div>
             <!-- iframe -->
